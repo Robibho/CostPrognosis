@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'dart:typed_data';
+import '../schema/structs/index.dart';
 
 import 'package:flutter/foundation.dart';
 
@@ -20,7 +22,7 @@ class GetResponseCall {
   "messages": [
     {
       "role": "user",
-      "content": "$prompt. Return a response that could be read allowed in a total of about 30-60 seconds in $language (language code)"
+      "content": "${prompt}. Return a response that could be read allowed in a total of about 30-60 seconds in ${language} (language code)"
     }
   ],
   "model": "gpt-4-1106-preview",
@@ -31,7 +33,7 @@ class GetResponseCall {
       apiUrl: 'https://api.openai.com/v1/chat/completions',
       callType: ApiCallType.POST,
       headers: {
-        'Authorization': 'Bearer $apiKeyAuth',
+        'Authorization': 'Bearer ${apiKeyAuth}',
       },
       params: {},
       body: ffApiRequestBody,

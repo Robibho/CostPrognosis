@@ -3,9 +3,13 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:math';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'authentication_model.dart';
 export 'authentication_model.dart';
 
@@ -64,15 +68,15 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 60.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 60.0),
+            end: Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(-0.349, 0),
-            end: const Offset(0, 0),
+            begin: Offset(-0.349, 0),
+            end: Offset(0, 0),
           ),
         ],
       ),
@@ -90,15 +94,15 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.0, 60.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(0.0, 60.0),
+            end: Offset(0.0, 0.0),
           ),
           TiltEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(-0.349, 0),
-            end: const Offset(0, 0),
+            begin: Offset(-0.349, 0),
+            end: Offset(0, 0),
           ),
         ],
       ),
@@ -136,40 +140,40 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: const AlignmentDirectional(0.0, -1.0),
+                  alignment: AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 44.0, 0.0, 0.0),
                           child: Container(
                             width: double.infinity,
-                            constraints: const BoxConstraints(
+                            constraints: BoxConstraints(
                               maxWidth: 602.0,
                             ),
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              borderRadius: const BorderRadius.only(
+                              borderRadius: BorderRadius.only(
                                 bottomLeft: Radius.circular(16.0),
                                 bottomRight: Radius.circular(16.0),
                                 topLeft: Radius.circular(0.0),
                                 topRight: Radius.circular(0.0),
                               ),
                             ),
-                            alignment: const AlignmentDirectional(-1.0, 0.0),
+                            alignment: AlignmentDirectional(-1.0, 0.0),
                             child: Align(
-                              alignment: const AlignmentDirectional(-1.0, 0.0),
+                              alignment: AlignmentDirectional(-1.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -191,7 +195,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                         Container(
                           width: double.infinity,
                           height: 700.0,
-                          constraints: const BoxConstraints(
+                          constraints: BoxConstraints(
                             maxWidth: 602.0,
                           ),
                           decoration: BoxDecoration(
@@ -199,12 +203,12 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                 .secondaryBackground,
                           ),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: Column(
                               children: [
                                 Align(
-                                  alignment: const Alignment(-1.0, 0),
+                                  alignment: Alignment(-1.0, 0),
                                   child: TabBar(
                                     isScrollable: true,
                                     labelColor: FlutterFlowTheme.of(context)
@@ -212,7 +216,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                     unselectedLabelColor:
                                         FlutterFlowTheme.of(context)
                                             .secondaryText,
-                                    labelPadding: const EdgeInsets.all(16.0),
+                                    labelPadding: EdgeInsets.all(16.0),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .displaySmall
                                         .override(
@@ -230,7 +234,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                     indicatorColor:
                                         FlutterFlowTheme.of(context).primary,
                                     indicatorWeight: 4.0,
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 16.0, 12.0),
                                     tabs: [
                                       Tab(
@@ -258,10 +262,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                     children: [
                                       Align(
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -269,7 +273,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
@@ -288,10 +292,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -299,7 +303,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                     focusNode: _model
                                                         .emailAddressFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: const [
+                                                    autofillHints: [
                                                       AutofillHints.email
                                                     ],
                                                     obscureText: false,
@@ -373,7 +377,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          const EdgeInsets.all(24.0),
+                                                          EdgeInsets.all(24.0),
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -396,10 +400,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -407,7 +411,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                     focusNode: _model
                                                         .passwordFocusNode,
                                                     autofocus: false,
-                                                    autofillHints: const [
+                                                    autofillHints: [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -482,7 +486,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          const EdgeInsets.all(24.0),
+                                                          EdgeInsets.all(24.0),
                                                       suffixIcon: InkWell(
                                                         onTap: () => setState(
                                                           () => _model
@@ -525,10 +529,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
@@ -564,14 +568,14 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                       width: 230.0,
                                                       height: 52.0,
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -594,7 +598,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                                     0.0,
                                                               ),
                                                       elevation: 3.0,
-                                                      borderSide: const BorderSide(
+                                                      borderSide: BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -613,10 +617,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                       ),
                                       Align(
                                         alignment:
-                                            const AlignmentDirectional(0.0, 0.0),
+                                            AlignmentDirectional(0.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
+                                              EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 12.0, 12.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -624,7 +628,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 CrossAxisAlignment.start,
                                             children: [
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 24.0),
                                                 child: Text(
@@ -643,10 +647,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -654,7 +658,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                     focusNode: _model
                                                         .emailAddressCreateFocusNode,
                                                     autofocus: true,
-                                                    autofillHints: const [
+                                                    autofillHints: [
                                                       AutofillHints.email
                                                     ],
                                                     obscureText: false,
@@ -728,7 +732,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          const EdgeInsets.all(24.0),
+                                                          EdgeInsets.all(24.0),
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -751,10 +755,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -762,7 +766,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                     focusNode: _model
                                                         .passwordCreateFocusNode,
                                                     autofocus: false,
-                                                    autofillHints: const [
+                                                    autofillHints: [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -837,7 +841,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          const EdgeInsets.all(24.0),
+                                                          EdgeInsets.all(24.0),
                                                       suffixIcon: InkWell(
                                                         onTap: () => setState(
                                                           () => _model
@@ -880,10 +884,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 0.0, 16.0),
-                                                child: SizedBox(
+                                                child: Container(
                                                   width: double.infinity,
                                                   child: TextFormField(
                                                     controller: _model
@@ -891,7 +895,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                     focusNode: _model
                                                         .passwordConfirmFocusNode,
                                                     autofocus: false,
-                                                    autofillHints: const [
+                                                    autofillHints: [
                                                       AutofillHints.password
                                                     ],
                                                     obscureText: !_model
@@ -966,7 +970,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                               .of(context)
                                                           .secondaryBackground,
                                                       contentPadding:
-                                                          const EdgeInsets.all(24.0),
+                                                          EdgeInsets.all(24.0),
                                                       suffixIcon: InkWell(
                                                         onTap: () => setState(
                                                           () => _model
@@ -1010,10 +1014,10 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                 ),
                                               ),
                                               Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: FFButtonWidget(
@@ -1029,7 +1033,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                         ScaffoldMessenger.of(
                                                                 context)
                                                             .showSnackBar(
-                                                          const SnackBar(
+                                                          SnackBar(
                                                             content: Text(
                                                               'Passwords don\'t match!',
                                                             ),
@@ -1065,14 +1069,14 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                       width: 230.0,
                                                       height: 52.0,
                                                       padding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
                                                                   0.0,
                                                                   0.0),
                                                       iconPadding:
-                                                          const EdgeInsetsDirectional
+                                                          EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -1095,7 +1099,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                                                                     0.0,
                                                               ),
                                                       elevation: 3.0,
-                                                      borderSide: const BorderSide(
+                                                      borderSide: BorderSide(
                                                         color:
                                                             Colors.transparent,
                                                         width: 1.0,
@@ -1136,7 +1140,7 @@ class _AuthenticationWidgetState extends State<AuthenticationWidget>
                     height: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      image: const DecorationImage(
+                      image: DecorationImage(
                         fit: BoxFit.cover,
                         image: CachedNetworkImageProvider(
                           'https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHw1fHxjb25zdHJ1Y3Rpb24lMjBjb3N0fGVufDB8fHx8MTcxNjQ4NDc2M3ww&ixlib=rb-4.0.3&q=80&w=1080',

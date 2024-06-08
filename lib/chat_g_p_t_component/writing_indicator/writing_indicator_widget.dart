@@ -1,8 +1,12 @@
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'writing_indicator_model.dart';
 export 'writing_indicator_model.dart';
 
@@ -39,15 +43,15 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 200.0.ms,
-            begin: const Offset(-20.0, 0.0),
-            end: const Offset(0.0, 0.0),
+            begin: Offset(-20.0, 0.0),
+            end: Offset(0.0, 0.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 200.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -67,15 +71,15 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(1.0, 1.0),
-            end: const Offset(0.8, 0.8),
+            begin: Offset(1.0, 1.0),
+            end: Offset(0.8, 0.8),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -101,15 +105,15 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.1, 1.1),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.1, 1.1),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 700.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(1.1, 1.1),
-            end: const Offset(0.8, 0.8),
+            begin: Offset(1.1, 1.1),
+            end: Offset(0.8, 0.8),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -135,15 +139,15 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
             curve: Curves.easeInOut,
             delay: 600.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(0.8, 0.8),
-            end: const Offset(1.0, 1.0),
+            begin: Offset(0.8, 0.8),
+            end: Offset(1.0, 1.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 1000.0.ms,
             duration: 300.0.ms,
-            begin: const Offset(1.0, 1.0),
-            end: const Offset(0.8, 0.8),
+            begin: Offset(1.0, 1.0),
+            end: Offset(0.8, 0.8),
           ),
           FadeEffect(
             curve: Curves.easeInOut,
@@ -176,7 +180,7 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
+      padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
       child: Container(
         width: 77.0,
         height: 32.0,
@@ -188,7 +192,7 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
           ),
         ),
         child: Padding(
-          padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+          padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
           child: Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -220,7 +224,7 @@ class _WritingIndicatorWidgetState extends State<WritingIndicatorWidget>
                 ),
               ).animateOnPageLoad(
                   animationsMap['containerOnPageLoadAnimation4']!),
-            ].divide(const SizedBox(width: 8.0)),
+            ].divide(SizedBox(width: 8.0)),
           ),
         ),
       ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation1']!),

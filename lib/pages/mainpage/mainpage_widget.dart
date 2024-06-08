@@ -4,6 +4,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'mainpage_model.dart';
 export 'mainpage_model.dart';
 
@@ -44,7 +46,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
         // Customize what your widget looks like when it's loading.
         if (!snapshot.hasData) {
           return Scaffold(
-            backgroundColor: const Color(0xFFFFFCFC),
+            backgroundColor: Color(0xFFFFFCFC),
             body: Center(
               child: SizedBox(
                 width: 50.0,
@@ -69,7 +71,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 : null;
         return Scaffold(
           key: scaffoldKey,
-          backgroundColor: const Color(0xFFFFFCFC),
+          backgroundColor: Color(0xFFFFFCFC),
           body: SafeArea(
             top: true,
             child: Column(
@@ -78,12 +80,12 @@ class _MainpageWidgetState extends State<MainpageWidget> {
               children: [
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: const [
+                      boxShadow: [
                         BoxShadow(
                           blurRadius: 3.0,
                           color: Color(0x33000000),
@@ -97,7 +99,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                     ),
                     child: Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -113,7 +115,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   2.0, 2.0, 2.0, 2.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(40.0),
@@ -130,7 +132,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
+                            padding: EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 0.0, 0.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -149,7 +151,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                                       ),
                                 ),
                                 Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       0.0, 4.0, 0.0, 0.0),
                                   child: Text(
                                     valueOrDefault<String>(
@@ -173,7 +175,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'fa3mr8wn' /* Home */,
@@ -186,7 +188,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -200,7 +202,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -213,10 +215,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -226,7 +228,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -242,7 +244,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -259,7 +261,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -273,7 +275,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -286,10 +288,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -299,7 +301,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -315,7 +317,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -332,7 +334,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -346,7 +348,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -359,10 +361,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -372,7 +374,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -388,7 +390,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -405,7 +407,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -415,7 +417,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       context.pushNamed(
                         'pricepredictionpage',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
+                          kTransitionInfoKey: TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                           ),
@@ -427,7 +429,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -440,10 +442,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -453,7 +455,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -469,7 +471,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -486,7 +488,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -500,7 +502,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -513,10 +515,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -526,7 +528,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -542,7 +544,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -559,7 +561,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -573,7 +575,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -586,10 +588,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -599,7 +601,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -615,7 +617,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -632,7 +634,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -642,7 +644,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       context.pushNamed(
                         'Chatbot',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: const TransitionInfo(
+                          kTransitionInfoKey: TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.fade,
                           ),
@@ -654,7 +656,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -667,10 +669,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -680,7 +682,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -696,7 +698,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.9, 0.0),
+                                alignment: AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -712,10 +714,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.0, 1.0),
+                  alignment: AlignmentDirectional(0.0, 1.0),
                   child: Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
+                        EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () async {
                         GoRouter.of(context).prepareAuthEvent();
@@ -729,10 +731,10 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                       ),
                       options: FFButtonOptions(
                         height: 40.0,
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             24.0, 0.0, 24.0, 0.0),
                         iconPadding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).secondaryText,
                         textStyle:
                             FlutterFlowTheme.of(context).titleSmall.override(
@@ -741,7 +743,7 @@ class _MainpageWidgetState extends State<MainpageWidget> {
                                   letterSpacing: 0.0,
                                 ),
                         elevation: 3.0,
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Colors.transparent,
                           width: 1.0,
                         ),

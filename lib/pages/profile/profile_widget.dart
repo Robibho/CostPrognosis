@@ -5,6 +5,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'profile_model.dart';
 export 'profile_model.dart';
 
@@ -74,20 +76,20 @@ class _ProfileWidgetState extends State<ProfileWidget> {
               context.pushNamed('projectdetails');
             },
           ),
-          actions: const [],
+          actions: [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+            padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
             child: Column(
               mainAxisSize: MainAxisSize.max,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '8x4dpyh0' /* Update Project Details */,
@@ -122,21 +124,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
+                      borderSide: BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     errorBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
+                      borderSide: BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     focusedErrorBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(
+                      borderSide: BorderSide(
                         color: Color(0x00000000),
                         width: 2.0,
                       ),
@@ -151,7 +153,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       _model.textController1Validator.asValidator(context),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController2,
                     focusNode: _model.textFieldFocusNode2,
@@ -177,21 +179,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -208,7 +210,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController3,
                     focusNode: _model.textFieldFocusNode3,
@@ -234,21 +236,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -265,7 +267,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController4,
                     focusNode: _model.textFieldFocusNode4,
@@ -291,21 +293,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -322,7 +324,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: TextFormField(
                     controller: _model.textController5,
                     focusNode: _model.textFieldFocusNode5,
@@ -348,21 +350,21 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
+                        borderSide: BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -379,7 +381,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -395,7 +397,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                           ),
                         ),
                         child: ClipRRect(
-                          borderRadius: const BorderRadius.only(
+                          borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
@@ -478,9 +480,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                         options: FFButtonOptions(
                           width: MediaQuery.sizeOf(context).width * 0.44,
                           height: 50.0,
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -496,7 +498,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       ScaffoldMessenger.of(context).showSnackBar(
@@ -507,7 +509,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                               color: FlutterFlowTheme.of(context).primaryText,
                             ),
                           ),
-                          duration: const Duration(milliseconds: 4000),
+                          duration: Duration(milliseconds: 4000),
                           backgroundColor:
                               FlutterFlowTheme.of(context).secondary,
                         ),
@@ -520,9 +522,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       width: double.infinity,
                       height: 55.0,
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(

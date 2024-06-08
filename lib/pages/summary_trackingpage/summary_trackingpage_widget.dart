@@ -1,8 +1,12 @@
+import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'summary_trackingpage_model.dart';
 export 'summary_trackingpage_model.dart';
@@ -66,7 +70,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: const Icon(
+            icon: Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -86,7 +90,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: const [],
+          actions: [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -96,9 +100,9 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Align(
-                alignment: const AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -125,7 +129,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -133,11 +137,11 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFD4F5F5),
+                          color: Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -172,7 +176,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                                       e.type == 'expense')
                                                   .toList())!))
                                           .toString(),
-                                      style: const TextStyle(),
+                                      style: TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -203,15 +207,15 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFD4F5F5),
+                          color: Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -241,14 +245,14 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                               .where((e) => e.type == 'income')
                                               .toList())
                                           .toString(),
-                                      style: const TextStyle(),
+                                      style: TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
-                                        color: const Color(0xFF3ADB19),
+                                        color: Color(0xFF3ADB19),
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -275,11 +279,11 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFD4F5F5),
+                          color: Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.all(8.0),
+                          padding: EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -309,7 +313,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                               .where((e) => e.type == 'expense')
                                               .toList())
                                           .toString(),
-                                      style: const TextStyle(),
+                                      style: TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -343,7 +347,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                   ],
                 ),
               ),
-              const Divider(
+              Divider(
                 thickness: 1.0,
                 color: Color(0xFF2BD9DC),
               ),
@@ -352,9 +356,9 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Align(
-                      alignment: const AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0.0, 0.0),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 10.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -384,12 +388,12 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                          EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       child: Container(
                         width: double.infinity,
                         height: 250.0,
                         decoration: BoxDecoration(
-                          color: const Color(0xFFD7F7F6),
+                          color: Color(0xFFD7F7F6),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Builder(
@@ -405,23 +409,23 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                               itemBuilder: (context, incomeIndex) {
                                 final incomeItem = income[incomeIndex];
                                 return Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       6.0, 5.0, 6.0, 5.0),
                                   child: Container(
                                     width: 100.0,
                                     decoration: BoxDecoration(
-                                      color: const Color(0xFF50E3A6),
+                                      color: Color(0xFF50E3A6),
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
+                                      padding: EdgeInsetsDirectional.fromSTEB(
                                           10.0, 0.0, 10.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Padding(
                                             padding:
-                                                const EdgeInsetsDirectional.fromSTEB(
+                                                EdgeInsetsDirectional.fromSTEB(
                                                     5.0, 0.0, 5.0, 0.0),
                                             child: ClipRRect(
                                               borderRadius:
@@ -443,7 +447,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 FFAppState()
@@ -467,10 +471,10 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                           ),
                                           Expanded(
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
+                                              alignment: AlignmentDirectional(
                                                   -1.0, 0.0),
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         5.0, 30.0, 5.0, 5.0),
                                                 child: Text(
@@ -482,7 +486,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                                         fontFamily:
                                                             'Readex Pro',
                                                         color:
-                                                            const Color(0xFFEF1313),
+                                                            Color(0xFFEF1313),
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -491,7 +495,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                           ),
                                           Expanded(
                                             child: Align(
-                                              alignment: const AlignmentDirectional(
+                                              alignment: AlignmentDirectional(
                                                   1.0, 0.0),
                                               child: RichText(
                                                 textScaler:
@@ -522,7 +526,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                                     TextSpan(
                                                       text: incomeItem.amount
                                                           .toString(),
-                                                      style: const TextStyle(),
+                                                      style: TextStyle(),
                                                     )
                                                   ],
                                                   style: FlutterFlowTheme.of(
@@ -572,14 +576,14 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
               ),
               Expanded(
                 child: Padding(
-                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(0.0, 0.0),
+                        alignment: AlignmentDirectional(0.0, 0.0),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 10.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
@@ -605,13 +609,13 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 250.0,
                           decoration: BoxDecoration(
-                            color: const Color(0xFFD7F7F6),
+                            color: Color(0xFFD7F7F6),
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Builder(
@@ -627,23 +631,23 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                 itemBuilder: (context, expenseIndex) {
                                   final expenseItem = expense[expenseIndex];
                                   return Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         6.0, 5.0, 6.0, 5.0),
                                     child: Container(
                                       width: 100.0,
                                       decoration: BoxDecoration(
-                                        color: const Color(0xFF50E3A6),
+                                        color: Color(0xFF50E3A6),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             10.0, 0.0, 10.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(5.0, 0.0, 5.0, 0.0),
                                               child: ClipRRect(
                                                 borderRadius:
@@ -665,7 +669,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                             ),
                                             Expanded(
                                               child: Padding(
-                                                padding: const EdgeInsetsDirectional
+                                                padding: EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         5.0, 0.0, 0.0, 0.0),
                                                 child: Text(
@@ -690,10 +694,10 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                             ),
                                             Expanded(
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     -1.0, 0.0),
                                                 child: Padding(
-                                                  padding: const EdgeInsetsDirectional
+                                                  padding: EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           5.0, 30.0, 5.0, 5.0),
                                                   child: Text(
@@ -705,7 +709,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                                           fontFamily:
                                                               'Readex Pro',
                                                           color:
-                                                              const Color(0xFFEF1313),
+                                                              Color(0xFFEF1313),
                                                           letterSpacing: 0.0,
                                                         ),
                                                   ),
@@ -714,7 +718,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                             ),
                                             Expanded(
                                               child: Align(
-                                                alignment: const AlignmentDirectional(
+                                                alignment: AlignmentDirectional(
                                                     1.0, 0.0),
                                                 child: RichText(
                                                   textScaler:
@@ -749,7 +753,7 @@ class _SummaryTrackingpageWidgetState extends State<SummaryTrackingpageWidget> {
                                                       TextSpan(
                                                         text: expenseItem.amount
                                                             .toString(),
-                                                        style: const TextStyle(),
+                                                        style: TextStyle(),
                                                       )
                                                     ],
                                                     style: FlutterFlowTheme.of(

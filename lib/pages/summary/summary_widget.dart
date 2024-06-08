@@ -1,6 +1,9 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'summary_model.dart';
 export 'summary_model.dart';
 
@@ -48,13 +51,13 @@ class _SummaryWidgetState extends State<SummaryWidget> {
               children: [
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                   child: Stack(
                     children: [
                       Align(
-                        alignment: const AlignmentDirectional(0.0, -1.0),
+                        alignment: AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(
+                          padding: EdgeInsetsDirectional.fromSTEB(
                               8.0, 8.0, 8.0, 8.0),
                           child: ClipRRect(
                             borderRadius: BorderRadius.circular(12.0),
@@ -69,7 +72,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                       ),
                       Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 0.0),
                         child: Container(
                           width: double.infinity,
                           height: 500.0,
@@ -80,16 +83,16 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                     .secondaryBackground,
                                 FlutterFlowTheme.of(context).accent4
                               ],
-                              stops: const [0.0, 1.0],
-                              begin: const AlignmentDirectional(0.0, -1.0),
-                              end: const AlignmentDirectional(0, 1.0),
+                              stops: [0.0, 1.0],
+                              begin: AlignmentDirectional(0.0, -1.0),
+                              end: AlignmentDirectional(0, 1.0),
                             ),
                             borderRadius: BorderRadius.circular(12.0),
                           ),
                           child: Align(
-                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   12.0, 32.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -107,7 +110,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                         ),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -134,7 +137,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 1.0,
@@ -146,7 +149,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                       height: 310.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x33000000),
@@ -160,7 +163,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                         borderRadius: BorderRadius.circular(12.0),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
+                        padding: EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -178,7 +181,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                   ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -193,7 +196,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -209,13 +212,13 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: Icon(
                                           Icons.trending_up_rounded,
@@ -247,7 +250,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -272,7 +275,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -288,13 +291,13 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
                                       24.0, 0.0, 24.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: Icon(
                                           Icons.trending_down_rounded,
@@ -326,7 +329,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                                       ),
                                             ),
                                             Padding(
-                                              padding: const EdgeInsetsDirectional
+                                              padding: EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 8.0, 0.0, 0.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -358,7 +361,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                 ),
                 Padding(
                   padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 1.0,
@@ -370,7 +373,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                       height: 260.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: const [
+                        boxShadow: [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x33000000),
@@ -385,13 +388,13 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                       ),
                       child: Padding(
                         padding:
-                            const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                            EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -406,7 +409,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   16.0, 4.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -421,7 +424,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
+                              padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
@@ -431,7 +434,7 @@ class _SummaryWidgetState extends State<SummaryWidget> {
                                       .primaryBackground,
                                   borderRadius: BorderRadius.circular(10.0),
                                 ),
-                                alignment: const AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
                                     'sf6l7kz5' /* Remove this and place graph he... */,

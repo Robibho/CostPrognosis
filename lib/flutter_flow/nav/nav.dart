@@ -1,6 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -10,7 +12,10 @@ import '/auth/base_auth_user_provider.dart';
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/lat_lng.dart';
+import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -75,21 +80,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const NavBarPage() : const AuthenticationWidget(),
+          appStateNotifier.loggedIn ? NavBarPage() : AuthenticationWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const NavBarPage() : const AuthenticationWidget(),
+              appStateNotifier.loggedIn ? NavBarPage() : AuthenticationWidget(),
         ),
         FFRoute(
           name: 'Mainpage',
           path: '/mainpage',
           requireAuth: true,
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Mainpage')
-              : const NavBarPage(
+              ? NavBarPage(initialPage: 'Mainpage')
+              : NavBarPage(
                   initialPage: 'Mainpage',
                   page: MainpageWidget(),
                 ),
@@ -98,102 +103,102 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'SUMMARY',
           path: '/summary',
           requireAuth: true,
-          builder: (context, params) => const SummaryWidget(),
+          builder: (context, params) => SummaryWidget(),
         ),
         FFRoute(
           name: 'costpredictionpage',
           path: '/costpredictionpage',
           requireAuth: true,
-          builder: (context, params) => const CostpredictionpageWidget(),
+          builder: (context, params) => CostpredictionpageWidget(),
         ),
         FFRoute(
           name: 'SummaryTrackingpage',
           path: '/summaryTrackingpage',
           requireAuth: true,
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'SummaryTrackingpage')
-              : const SummaryTrackingpageWidget(),
+              ? NavBarPage(initialPage: 'SummaryTrackingpage')
+              : SummaryTrackingpageWidget(),
         ),
         FFRoute(
           name: 'categories',
           path: '/categories',
           requireAuth: true,
-          builder: (context, params) => const CategoriesWidget(),
+          builder: (context, params) => CategoriesWidget(),
         ),
         FFRoute(
           name: 'Updateexpenditure',
           path: '/updateexpenditure',
           requireAuth: true,
-          builder: (context, params) => const UpdateexpenditureWidget(),
+          builder: (context, params) => UpdateexpenditureWidget(),
         ),
         FFRoute(
           name: 'analysis',
           path: '/analysis',
           requireAuth: true,
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'analysis')
-              : const AnalysisWidget(),
+              ? NavBarPage(initialPage: 'analysis')
+              : AnalysisWidget(),
         ),
         FFRoute(
           name: 'accounts',
           path: '/accounts',
           requireAuth: true,
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'accounts')
-              : const AccountsWidget(),
+              ? NavBarPage(initialPage: 'accounts')
+              : AccountsWidget(),
         ),
         FFRoute(
           name: 'projectdetails',
           path: '/projectdetails',
           requireAuth: true,
-          builder: (context, params) => const ProjectdetailsWidget(),
+          builder: (context, params) => ProjectdetailsWidget(),
         ),
         FFRoute(
           name: 'Authentication',
           path: '/authentication',
-          builder: (context, params) => const AuthenticationWidget(),
+          builder: (context, params) => AuthenticationWidget(),
         ),
         FFRoute(
           name: 'profile',
           path: '/profile',
           requireAuth: true,
-          builder: (context, params) => const ProfileWidget(),
+          builder: (context, params) => ProfileWidget(),
         ),
         FFRoute(
           name: 'pricepredictionpage',
           path: '/pricepredictionpage',
           requireAuth: true,
-          builder: (context, params) => const PricepredictionpageWidget(),
+          builder: (context, params) => PricepredictionpageWidget(),
         ),
         FFRoute(
           name: 'sampl1',
           path: '/sampl1',
           requireAuth: true,
-          builder: (context, params) => const Sampl1Widget(),
+          builder: (context, params) => Sampl1Widget(),
         ),
         FFRoute(
           name: 'Chatbot',
           path: '/chatbot',
           requireAuth: true,
-          builder: (context, params) => const ChatbotWidget(),
+          builder: (context, params) => ChatbotWidget(),
         ),
         FFRoute(
           name: 'chat_ai_Screen',
           path: '/chatAiScreen',
           requireAuth: true,
-          builder: (context, params) => const ChatAiScreenWidget(),
+          builder: (context, params) => ChatAiScreenWidget(),
         ),
         FFRoute(
           name: 'projectprogress',
           path: '/projectprogress',
           requireAuth: true,
-          builder: (context, params) => const ProjectprogressWidget(),
+          builder: (context, params) => ProjectprogressWidget(),
         ),
         FFRoute(
           name: 'suppliers',
           path: '/suppliers',
           requireAuth: true,
-          builder: (context, params) => const SuppliersWidget(),
+          builder: (context, params) => SuppliersWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -433,7 +438,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {
