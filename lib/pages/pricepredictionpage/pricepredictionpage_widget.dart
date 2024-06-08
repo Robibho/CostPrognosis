@@ -462,7 +462,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                 ),
                                 TextSpan(
                                   text: FFLocalizations.of(context).getText(
-                                    'aoiyn5i0' /* 23 */,
+                                    '3xyv21pt' /* 23 */,
                                   ),
                                   style: const TextStyle(),
                                 )
@@ -521,7 +521,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                 ),
                                 TextSpan(
                                   text: FFLocalizations.of(context).getText(
-                                    '71t2nawa' /* 20 */,
+                                    'zgj8b9wq' /* 20 */,
                                   ),
                                   style: const TextStyle(),
                                 )
@@ -571,7 +571,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                 ),
                                 TextSpan(
                                   text: FFLocalizations.of(context).getText(
-                                    'g0gefiqk' /* 34 */,
+                                    '51uxky6r' /* 34 */,
                                   ),
                                   style: const TextStyle(),
                                 )

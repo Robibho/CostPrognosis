@@ -1406,7 +1406,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hans': '\$0.00',
       'zu': '\$0.00',
     },
-    'aoiyn5i0': {
+    '3xyv21pt': {
       'en': '23',
       'fr': '',
       'ru': '',
@@ -1434,7 +1434,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hans': '\$0.00',
       'zu': '\$0.00',
     },
-    '71t2nawa': {
+    'zgj8b9wq': {
       'en': '20',
       'fr': '',
       'ru': '',
@@ -1462,7 +1462,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'zh_Hans': '\$0.00',
       'zu': '\$0.00',
     },
-    'g0gefiqk': {
+    '51uxky6r': {
       'en': '34',
       'fr': '',
       'ru': '',
