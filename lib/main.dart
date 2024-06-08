@@ -1,16 +1,15 @@
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'auth/firebase_auth/firebase_user_provider.dart';
 import 'auth/firebase_auth/auth_util.dart';
-
 import 'backend/firebase/firebase_config.dart';
 import 'flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:tflite_flutter/tflite_flutter.dart';  // Add this import
 import 'index.dart';
 
 void main() async {
@@ -22,14 +21,19 @@ void main() async {
   final appState = FFAppState(); // Initialize FFAppState
   await appState.initializePersistedState();
 
+  // Initialize TFLite
+  final interpreter = await Interpreter.fromAsset('construction_cost_model.tflite');  // Add this line
+
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
-    child: const MyApp(),
+    child: MyApp(interpreter: interpreter),  // Pass the interpreter
   ));
 }
 
 class MyApp extends StatefulWidget {
-  const MyApp({super.key});
+  const MyApp({super.key, required this.interpreter});  // Add interpreter parameter
+
+  final Interpreter interpreter;  // Add this field
 
   // This widget is the root of your application.
   @override
@@ -74,7 +78,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'CostPrognosis ',
+      title: 'CostPrognosis',
       localizationsDelegates: const [
         FFLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
@@ -184,3 +188,4 @@ class _NavBarPageState extends State<NavBarPage> {
     );
   }
 }
+
