@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090554257808",
+    "project_id": "cost-prognosis-5g3vg4",
+    "storage_bucket": "cost-prognosis-5g3vg4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090554257808:android:08bff5e50ebba079b59315",
+        "android_client_info": {
+          "package_name": "com.mycompany.costprognosis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDV8X3g6WTwPnM8zln2q3XG8S1ztZBonas"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
