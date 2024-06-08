@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'accounts_model.dart';
 export 'accounts_model.dart';
@@ -56,7 +53,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -76,7 +73,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -86,15 +83,15 @@ class _AccountsWidgetState extends State<AccountsWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
                               '2uk5zfmb' /* Contigence Reserve Summary
@@ -118,7 +115,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -126,11 +123,11 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -165,7 +162,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                                                       e.type == 'expense')
                                                   .toList())!))
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -196,15 +193,15 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -234,14 +231,14 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                                               .where((e) => e.type == 'income')
                                               .toList())
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
-                                        color: Color(0xFF3ADB19),
+                                        color: const Color(0xFF3ADB19),
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -268,11 +265,11 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -302,7 +299,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                                               .where((e) => e.type == 'expense')
                                               .toList())
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -336,20 +333,20 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                   ],
                 ),
               ),
-              Divider(
+              const Divider(
                 thickness: 1.0,
                 color: Color(0xFF2BD9DC),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
                               'x8gncb1r' /* Accounts
@@ -373,7 +370,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -382,7 +379,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -397,14 +394,14 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -480,7 +477,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -489,7 +486,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -504,14 +501,14 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -587,7 +584,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -596,7 +593,7 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
+                        const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 12.0, 8.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -611,14 +608,14 @@ class _AccountsWidgetState extends State<AccountsWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(

@@ -6,10 +6,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/pages/categories_component/categories_component_widget.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'updateexpenditure_model.dart';
 export 'updateexpenditure_model.dart';
@@ -78,7 +76,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -98,7 +96,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -108,14 +106,14 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 10.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(5.0, 10.0, 5.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 10.0, 5.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             _model.type = 'expense';
@@ -128,16 +126,16 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                             Icons.add_shopping_cart_sharp,
                             color: _model.type == 'expense'
                                 ? FlutterFlowTheme.of(context).error
-                                : Color(0x00000000),
+                                : const Color(0x00000000),
                             size: 15.0,
                           ),
                           options: FFButtonOptions(
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFFF5F5F5),
+                            color: const Color(0xFFF5F5F5),
                             textStyle: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -150,7 +148,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                             borderSide: BorderSide(
                               color: _model.type == 'expense'
                                   ? FlutterFlowTheme.of(context).error
-                                  : Color(0x00000000),
+                                  : const Color(0x00000000),
                               width: 3.0,
                             ),
                             borderRadius: BorderRadius.circular(24.0),
@@ -161,7 +159,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                     Expanded(
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(5.0, 10.0, 5.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(5.0, 10.0, 5.0, 0.0),
                         child: FFButtonWidget(
                           onPressed: () async {
                             _model.type = 'income';
@@ -175,17 +173,17 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                           icon: Icon(
                             Icons.currency_exchange_outlined,
                             color: _model.type == 'income'
-                                ? Color(0xFF59FFCA)
-                                : Color(0x00000000),
+                                ? const Color(0xFF59FFCA)
+                                : const Color(0x00000000),
                             size: 15.0,
                           ),
                           options: FFButtonOptions(
                             height: 40.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 24.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            color: Color(0xFFF5F5F5),
+                            color: const Color(0xFFF5F5F5),
                             textStyle: FlutterFlowTheme.of(context)
                                 .labelLarge
                                 .override(
@@ -197,8 +195,8 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                             elevation: 0.0,
                             borderSide: BorderSide(
                               color: _model.type == 'income'
-                                  ? Color(0xFF59FFCA)
-                                  : Color(0x00000000),
+                                  ? const Color(0xFF59FFCA)
+                                  : const Color(0x00000000),
                               width: 3.0,
                             ),
                             borderRadius: BorderRadius.circular(24.0),
@@ -210,10 +208,10 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(1.0, 0.0),
+                alignment: const AlignmentDirectional(1.0, 0.0),
                 child: Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(8.0, 130.0, 8.0, 10.0),
+                      const EdgeInsetsDirectional.fromSTEB(8.0, 130.0, 8.0, 10.0),
                   child: TextFormField(
                     controller: _model.amountTextController,
                     focusNode: _model.amountFocusNode,
@@ -284,7 +282,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -322,19 +320,19 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                                           : FocusScope.of(context).unfocus(),
                                   child: Padding(
                                     padding: MediaQuery.viewInsetsOf(context),
-                                    child: CategoriesComponentWidget(),
+                                    child: const CategoriesComponentWidget(),
                                   ),
                                 );
                               },
                             ).then((value) => safeSetState(() {}));
                           },
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 10.0, 0.0),
                                   child: Text(
                                     (FFAppState().selectedCategory != null) &&
@@ -378,7 +376,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -402,7 +400,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                           hoverColor: Colors.transparent,
                           highlightColor: Colors.transparent,
                           onTap: () async {
-                            final _datePickedDate = await showDatePicker(
+                            final datePickedDate = await showDatePicker(
                               context: context,
                               initialDate: getCurrentTimestamp,
                               firstDate: getCurrentTimestamp,
@@ -439,23 +437,23 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                               },
                             );
 
-                            if (_datePickedDate != null) {
+                            if (datePickedDate != null) {
                               safeSetState(() {
                                 _model.datePicked = DateTime(
-                                  _datePickedDate.year,
-                                  _datePickedDate.month,
-                                  _datePickedDate.day,
+                                  datePickedDate.year,
+                                  datePickedDate.month,
+                                  datePickedDate.day,
                                 );
                               });
                             }
                           },
                           child: Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 10.0, 0.0),
                                   child: Text(
                                     _model.datePicked != null
@@ -501,13 +499,13 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Expanded(
                           child: Align(
-                            alignment: AlignmentDirectional(-1.0, -1.0),
+                            alignment: const AlignmentDirectional(-1.0, -1.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
                                 'yc47dbsn' /* Description */,
@@ -523,12 +521,12 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             width: 200.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController2,
@@ -610,7 +608,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -629,10 +627,10 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                           ),
                         ),
                         Container(
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                           child: Container(
                             width: 200.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: FlutterFlowDropDown<String>(
                               controller: _model.dropDownValueController ??=
                                   FormFieldController<String>(null),
@@ -675,7 +673,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                                   FlutterFlowTheme.of(context).alternate,
                               borderWidth: 2.0,
                               borderRadius: 8.0,
-                              margin: EdgeInsetsDirectional.fromSTEB(
+                              margin: const EdgeInsetsDirectional.fromSTEB(
                                   10.0, 4.0, 10.0, 4.0),
                               hidesUnderline: true,
                               isOverButton: true,
@@ -695,16 +693,14 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                 ],
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 0.0, 0.0),
                 child: FFButtonWidget(
                   onPressed: () async {
                     FFAppState().addToTransaction(TransactionStruct(
                       type: _model.type,
                       amount: double.tryParse(_model.amountTextController.text),
                       category: FFAppState().selectedCategory,
-                      date: _model.datePicked != null
-                          ? _model.datePicked
-                          : getCurrentTimestamp,
+                      date: _model.datePicked ?? getCurrentTimestamp,
                       description: _model.textController2.text,
                       account: _model.dropDownValue,
                     ));
@@ -719,9 +715,9 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                     width: 200.0,
                     height: 45.0,
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
                     iconPadding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                     color: FlutterFlowTheme.of(context).primary,
                     textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                           fontFamily: 'Readex Pro',
@@ -729,7 +725,7 @@ class _UpdateexpenditureWidgetState extends State<UpdateexpenditureWidget> {
                           letterSpacing: 0.0,
                         ),
                     elevation: 1.0,
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Colors.transparent,
                       width: 1.0,
                     ),

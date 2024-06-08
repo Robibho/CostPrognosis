@@ -1,15 +1,11 @@
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_charts.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/custom_functions.dart' as functions;
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'analysis_model.dart';
 export 'analysis_model.dart';
@@ -45,20 +41,20 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
   Widget build(BuildContext context) {
     context.watch<FFAppState>();
     final chartPieChartColorsList = [
-      Color(0xED4A57C1),
-      Color(0xFFFF3653),
-      Color(0xFFFAC418),
-      Color(0xFF539A80),
-      Color(0xFF4A57C1),
+      const Color(0xED4A57C1),
+      const Color(0xFFFF3653),
+      const Color(0xFFFAC418),
+      const Color(0xFF539A80),
+      const Color(0xFF4A57C1),
       FlutterFlowTheme.of(context).accent3,
-      Color(0xFF824BEB),
+      const Color(0xFF824BEB),
       FlutterFlowTheme.of(context).primary,
-      Color(0xFF5C6BF4),
-      Color(0xFF8F5CB5),
-      Color(0xFFA487ED),
-      Color(0xFF6A80C9),
-      Color(0xFF7849BD),
-      Color(0xFF2534B9)
+      const Color(0xFF5C6BF4),
+      const Color(0xFF8F5CB5),
+      const Color(0xFFA487ED),
+      const Color(0xFF6A80C9),
+      const Color(0xFF7849BD),
+      const Color(0xFF2534B9)
     ];
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
@@ -75,7 +71,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -95,7 +91,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -105,9 +101,9 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -134,7 +130,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -142,11 +138,11 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -181,7 +177,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                                       e.type == 'expense')
                                                   .toList())!))
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -212,15 +208,15 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                     ),
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 8.0, 0.0),
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -250,14 +246,14 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                               .where((e) => e.type == 'income')
                                               .toList())
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
                                         fontFamily: 'Readex Pro',
-                                        color: Color(0xFF3ADB19),
+                                        color: const Color(0xFF3ADB19),
                                         letterSpacing: 0.0,
                                       ),
                                 ),
@@ -284,11 +280,11 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                       child: Container(
                         width: 100.0,
                         decoration: BoxDecoration(
-                          color: Color(0xFFD4F5F5),
+                          color: const Color(0xFFD4F5F5),
                           borderRadius: BorderRadius.circular(8.0),
                         ),
                         child: Padding(
-                          padding: EdgeInsets.all(8.0),
+                          padding: const EdgeInsets.all(8.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.start,
@@ -318,7 +314,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                               .where((e) => e.type == 'expense')
                                               .toList())
                                           .toString(),
-                                      style: TextStyle(),
+                                      style: const TextStyle(),
                                     )
                                   ],
                                   style: FlutterFlowTheme.of(context)
@@ -352,12 +348,12 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                   ],
                 ),
               ),
-              Divider(
+              const Divider(
                 thickness: 1.0,
                 color: Color(0xFF2BD9DC),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 8.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
                   children: [
@@ -399,7 +395,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                         borderColor: FlutterFlowTheme.of(context).alternate,
                         borderWidth: 2.0,
                         borderRadius: 8.0,
-                        margin: EdgeInsetsDirectional.fromSTEB(
+                        margin: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 4.0, 16.0, 4.0),
                         hidesUnderline: true,
                         isOverButton: true,
@@ -411,8 +407,8 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, 0.0),
-                child: Container(
+                alignment: const AlignmentDirectional(0.0, 0.0),
+                child: SizedBox(
                   width: 370.0,
                   height: 257.0,
                   child: Stack(
@@ -437,7 +433,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                 ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, -1.0),
+                        alignment: const AlignmentDirectional(-1.0, -1.0),
                         child: FlutterFlowChartLegendWidget(
                           entries: functions
                               .getCategoriesname(
@@ -464,13 +460,13 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                     fontFamily: 'Readex Pro',
                                     letterSpacing: 0.0,
                                   ),
-                          textPadding: EdgeInsetsDirectional.fromSTEB(
+                          textPadding: const EdgeInsetsDirectional.fromSTEB(
                               5.0, 0.0, 0.0, 0.0),
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               5.0, 0.0, 5.0, 0.0),
                           borderColor: Colors.black,
                           indicatorSize: 10.0,
-                          indicatorBorderRadius: BorderRadius.only(
+                          indicatorBorderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(0.0),
                             bottomRight: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
@@ -484,12 +480,12 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
               ),
               Expanded(
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 250.0,
                     decoration: BoxDecoration(
-                      color: Color(0xFFD7F7F6),
+                      color: const Color(0xFFD7F7F6),
                       borderRadius: BorderRadius.circular(8.0),
                     ),
                     child: Builder(
@@ -506,22 +502,22 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                             final transactionItem =
                                 transaction[transactionIndex];
                             return Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   6.0, 5.0, 6.0, 5.0),
                               child: Container(
                                 width: 100.0,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFF50E3A6),
+                                  color: const Color(0xFF50E3A6),
                                   borderRadius: BorderRadius.circular(8.0),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       10.0, 0.0, 10.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             5.0, 0.0, 5.0, 0.0),
                                         child: ClipRRect(
                                           borderRadius:
@@ -544,7 +540,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   5.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             FFAppState()
@@ -567,7 +563,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                       Expanded(
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(1.0, 0.0),
+                                              const AlignmentDirectional(1.0, 0.0),
                                           child: RichText(
                                             textScaler: MediaQuery.of(context)
                                                 .textScaler,
@@ -596,7 +592,7 @@ class _AnalysisWidgetState extends State<AnalysisWidget> {
                                                 ),
                                                 TextSpan(
                                                   text: transactionItem.account,
-                                                  style: TextStyle(),
+                                                  style: const TextStyle(),
                                                 )
                                               ],
                                               style:

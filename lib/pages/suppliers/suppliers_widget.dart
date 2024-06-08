@@ -1,10 +1,7 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'suppliers_model.dart';
 export 'suppliers_model.dart';
 
@@ -71,7 +68,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 0.0,
         ),
@@ -84,7 +81,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                   child: Material(
                     color: Colors.transparent,
                     elevation: 3.0,
@@ -102,7 +99,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 12.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -114,9 +111,9 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     4.0, 0.0, 0.0, 0.0),
-                                child: Container(
+                                child: SizedBox(
                                   width: 200.0,
                                   child: TextFormField(
                                     controller: _model.textController,
@@ -184,7 +181,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 4.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 4.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       's686vuw9' /* Suppliers */,
@@ -196,7 +193,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 44.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 44.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     children: [
@@ -207,14 +204,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -227,7 +224,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -246,7 +243,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -264,7 +261,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -289,14 +286,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -309,7 +306,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -328,7 +325,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -346,7 +343,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -371,14 +368,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -391,7 +388,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -410,7 +407,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -428,7 +425,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -453,14 +450,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -473,7 +470,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -492,7 +489,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -510,7 +507,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -535,14 +532,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -555,7 +552,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -574,7 +571,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -592,7 +589,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
@@ -617,14 +614,14 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                               FlutterFlowTheme.of(context).secondaryBackground,
                         ),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 12.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 8.0, 16.0, 12.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(16.0),
@@ -637,7 +634,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Row(
                                   mainAxisSize: MainAxisSize.max,
@@ -656,7 +653,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                           ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 0.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -674,7 +671,7 @@ class _SuppliersWidgetState extends State<SuppliersWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 4.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(

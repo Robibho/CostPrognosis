@@ -6,14 +6,10 @@ import '/flutter_flow/flutter_flow_language_selector.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_timer.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'chatbot_model.dart';
@@ -123,7 +119,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 2.0,
         ),
@@ -140,7 +136,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Stack(
                     children: [
                       SingleChildScrollView(
@@ -149,30 +145,30 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 44.0, 0.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 602.0,
                                 ),
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
-                                  borderRadius: BorderRadius.only(
+                                  borderRadius: const BorderRadius.only(
                                     bottomLeft: Radius.circular(16.0),
                                     bottomRight: Radius.circular(16.0),
                                     topLeft: Radius.circular(0.0),
                                     topRight: Radius.circular(0.0),
                                   ),
                                 ),
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                               ),
                             ),
                             Container(
                               width: double.infinity,
                               height: 700.0,
-                              constraints: BoxConstraints(
+                              constraints: const BoxConstraints(
                                 maxWidth: 602.0,
                               ),
                               decoration: BoxDecoration(
@@ -180,12 +176,12 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                     .secondaryBackground,
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 0.0, 16.0, 0.0),
                                 child: Column(
                                   children: [
                                     Align(
-                                      alignment: Alignment(-1.0, 0),
+                                      alignment: const Alignment(-1.0, 0),
                                       child: TabBar(
                                         isScrollable: true,
                                         labelColor: FlutterFlowTheme.of(context)
@@ -193,7 +189,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                         unselectedLabelColor:
                                             FlutterFlowTheme.of(context)
                                                 .secondaryText,
-                                        labelPadding: EdgeInsets.all(16.0),
+                                        labelPadding: const EdgeInsets.all(16.0),
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .displaySmall
                                             .override(
@@ -212,7 +208,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                             FlutterFlowTheme.of(context)
                                                 .primary,
                                         indicatorWeight: 4.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 16.0, 12.0),
                                         tabs: [
                                           Tab(
@@ -240,24 +236,24 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: wrapWithModel(
                                               model:
                                                   _model.aiChatComponentModel,
                                               updateCallback: () =>
                                                   setState(() {}),
                                               updateOnChange: true,
-                                              child: AiChatComponentWidget(),
+                                              child: const AiChatComponentWidget(),
                                             ),
                                           ),
-                                          Container(
+                                          SizedBox(
                                             width: double.infinity,
                                             height: double.infinity,
                                             child: Stack(
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Column(
                                                     mainAxisSize:
@@ -267,7 +263,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                             .center,
                                                     children: [
                                                       AnimatedContainer(
-                                                        duration: Duration(
+                                                        duration: const Duration(
                                                             milliseconds: 300),
                                                         curve: Curves.easeInOut,
                                                         decoration:
@@ -276,7 +272,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                                   .of(context)
                                                               .primary,
                                                           borderRadius:
-                                                              BorderRadius.only(
+                                                              const BorderRadius.only(
                                                             bottomLeft:
                                                                 Radius.circular(
                                                                     24.0),
@@ -293,7 +289,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       32.0,
                                                                       32.0,
@@ -327,7 +323,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                                     if (_model
                                                                         .isRecording) {
                                                                       return Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             30.0,
                                                                             0.0,
@@ -392,7 +388,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                                                           letterSpacing: 0.0,
                                                                                         ),
                                                                                   ),
-                                                                                  duration: Duration(milliseconds: 4000),
+                                                                                  duration: const Duration(milliseconds: 4000),
                                                                                   backgroundColor: FlutterFlowTheme.of(context).secondary,
                                                                                 ),
                                                                               );
@@ -449,7 +445,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 1.0),
                                                   child: Container(
                                                     width: double.infinity,
@@ -463,7 +459,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                 ),
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 1.0),
                                                   child:
                                                       FlutterFlowLanguageSelector(
@@ -509,7 +505,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                 if (_model.isSpeaking)
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             1.0, -1.0),
                                                     child: FlutterFlowTimer(
                                                       initialTime: FFAppState()
@@ -525,7 +521,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                       controller: _model
                                                           .timerController,
                                                       updateStateInterval:
-                                                          Duration(
+                                                          const Duration(
                                                               milliseconds:
                                                                   100),
                                                       onChanged: (value,
@@ -535,8 +531,9 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                             value;
                                                         _model.timerValue =
                                                             displayTime;
-                                                        if (shouldUpdate)
+                                                        if (shouldUpdate) {
                                                           setState(() {});
+                                                        }
                                                       },
                                                       onEnded: () async {
                                                         _model.timerController
@@ -553,7 +550,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                                           .headlineSmall
                                                           .override(
                                                             fontFamily: 'Inter',
-                                                            color: Color(
+                                                            color: const Color(
                                                                 0x0014181B),
                                                             fontSize: 1.0,
                                                             letterSpacing: 0.0,
@@ -578,12 +575,12 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Container(
                                         width: 120.0,
                                         height: 120.0,
                                         clipBehavior: Clip.antiAlias,
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           shape: BoxShape.circle,
                                         ),
                                         child: Image.asset(
@@ -614,7 +611,7 @@ class _ChatbotWidgetState extends State<ChatbotWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 5.0, 0.0, 0.0),
                                           child: Text(
                                             FFLocalizations.of(context).getText(

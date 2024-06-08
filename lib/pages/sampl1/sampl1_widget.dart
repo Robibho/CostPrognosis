@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'sampl1_model.dart';
 export 'sampl1_model.dart';
 
@@ -68,7 +66,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -80,7 +78,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '3vl9924b' /* Construction Finance Advice */,
@@ -92,7 +90,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '5h6i3jk5' /* Expert tips for managing your ... */,
@@ -104,7 +102,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'iuziezd1' /* 1. Plan your budget meticulous... */,
@@ -116,7 +114,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'hsh6v9sf' /* 2. Regularly review and update... */,
@@ -128,7 +126,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'axagfmfy' /* 3. Use technology to track exp... */,
@@ -140,7 +138,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '51i6ulh6' /* 4. Negotiate payment terms wit... */,
@@ -152,7 +150,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '630pzhd7' /* 5. Train your team on cost man... */,
@@ -164,7 +162,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'c0luz4l8' /* 6. Explore financing options l... */,
@@ -176,7 +174,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'e0bt0kwh' /* 7. Consider the long-term oper... */,
@@ -188,7 +186,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'exl7whgl' /* 8. Regularly communicate with ... */,
@@ -200,7 +198,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       '2rws9p15' /* 9. Implement a robust change o... */,
@@ -212,7 +210,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'cqqhu9ey' /* 10. Always maintain a continge... */,
@@ -224,7 +222,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'q3srztdw' /* For personalized advice, use o... */,
@@ -236,7 +234,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -248,9 +246,9 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(
@@ -264,7 +262,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -276,9 +274,9 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(
@@ -292,7 +290,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -304,9 +302,9 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(
@@ -320,7 +318,7 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 0.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -332,9 +330,9 @@ class _Sampl1WidgetState extends State<Sampl1Widget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(

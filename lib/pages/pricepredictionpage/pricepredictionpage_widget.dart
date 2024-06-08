@@ -2,10 +2,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'pricepredictionpage_model.dart';
 export 'pricepredictionpage_model.dart';
 
@@ -81,7 +78,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -94,7 +91,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
               children: [
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'q1lcgo9w' /* Material Price Prediction */,
@@ -107,7 +104,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController1,
                     focusNode: _model.textFieldFocusNode1,
@@ -133,21 +130,21 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -164,7 +161,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController2,
                     focusNode: _model.textFieldFocusNode2,
@@ -190,21 +187,21 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -221,7 +218,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController3,
                     focusNode: _model.textFieldFocusNode3,
@@ -247,21 +244,21 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -278,7 +275,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: TextFormField(
                     controller: _model.textController4,
                     focusNode: _model.textFieldFocusNode4,
@@ -304,21 +301,21 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       errorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                       focusedErrorBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
+                        borderSide: const BorderSide(
                           color: Color(0x00000000),
                           width: 2.0,
                         ),
@@ -335,7 +332,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: FFButtonWidget(
                     onPressed: () {
                       print('Button pressed ...');
@@ -347,9 +344,9 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(
@@ -364,7 +361,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 16.0),
                   child: Text(
                     FFLocalizations.of(context).getText(
                       'rgrwr6n5' /* Predicted Material Costs */,
@@ -376,7 +373,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 16.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 16.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -417,7 +414,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                   text: FFLocalizations.of(context).getText(
                                     'vi0v14ut' /* 5 */,
                                   ),
-                                  style: TextStyle(),
+                                  style: const TextStyle(),
                                 )
                               ],
                               style: FlutterFlowTheme.of(context)
@@ -467,7 +464,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                   text: FFLocalizations.of(context).getText(
                                     '3xyv21pt' /* 23 */,
                                   ),
-                                  style: TextStyle(),
+                                  style: const TextStyle(),
                                 )
                               ],
                               style: FlutterFlowTheme.of(context)
@@ -485,7 +482,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 16.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 16.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -526,7 +523,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                   text: FFLocalizations.of(context).getText(
                                     'zgj8b9wq' /* 20 */,
                                   ),
-                                  style: TextStyle(),
+                                  style: const TextStyle(),
                                 )
                               ],
                               style: FlutterFlowTheme.of(context)
@@ -576,7 +573,7 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                                   text: FFLocalizations.of(context).getText(
                                     '51uxky6r' /* 34 */,
                                   ),
-                                  style: TextStyle(),
+                                  style: const TextStyle(),
                                 )
                               ],
                               style: FlutterFlowTheme.of(context)
@@ -595,13 +592,13 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed(
                         'suppliers',
                         extra: <String, dynamic>{
-                          kTransitionInfoKey: TransitionInfo(
+                          kTransitionInfoKey: const TransitionInfo(
                             hasTransition: true,
                             transitionType: PageTransitionType.rightToLeft,
                           ),
@@ -615,9 +612,9 @@ class _PricepredictionpageWidgetState extends State<PricepredictionpageWidget> {
                       width: double.infinity,
                       height: 50.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).tertiary,
                       textStyle:
                           FlutterFlowTheme.of(context).titleMedium.override(

@@ -1,8 +1,6 @@
-import '/backend/schema/structs/index.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'categories_component_model.dart';
 export 'categories_component_model.dart';
@@ -54,7 +52,7 @@ class _CategoriesComponentWidgetState extends State<CategoriesComponentWidget> {
           final category = FFAppState().categories.toList();
           return GridView.builder(
             padding: EdgeInsets.zero,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 3,
               crossAxisSpacing: 10.0,
               mainAxisSpacing: 10.0,
@@ -86,7 +84,7 @@ class _CategoriesComponentWidgetState extends State<CategoriesComponentWidget> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.network(
@@ -98,7 +96,7 @@ class _CategoriesComponentWidgetState extends State<CategoriesComponentWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 0.0),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Text(
                           categoryItem.name,
                           textAlign: TextAlign.center,

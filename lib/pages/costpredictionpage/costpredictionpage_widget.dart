@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'costpredictionpage_model.dart';
 export 'costpredictionpage_model.dart';
 
@@ -70,7 +68,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -79,21 +77,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
               context.pushNamed('Mainpage');
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
         body: SafeArea(
           top: true,
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 16.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
                         'ym6ul3k1' /* Predict Structural Cost */,
@@ -108,7 +106,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController1,
                       focusNode: _model.textFieldFocusNode1,
@@ -134,21 +132,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         errorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
@@ -165,7 +163,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController2,
                       focusNode: _model.textFieldFocusNode2,
@@ -191,21 +189,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         errorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
@@ -222,7 +220,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController3,
                       focusNode: _model.textFieldFocusNode3,
@@ -248,21 +246,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         errorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
@@ -279,7 +277,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController4,
                       focusNode: _model.textFieldFocusNode4,
@@ -305,21 +303,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         errorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
@@ -336,7 +334,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 20.0, 16.0, 0.0),
                     child: TextFormField(
                       controller: _model.textController5,
                       focusNode: _model.textFieldFocusNode5,
@@ -362,21 +360,21 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         errorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
                           borderRadius: BorderRadius.circular(10.0),
                         ),
                         focusedErrorBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Color(0x00000000),
                             width: 2.0,
                           ),
@@ -392,7 +390,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -504,7 +502,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                           borderColor: FlutterFlowTheme.of(context).alternate,
                           borderWidth: 2.0,
                           borderRadius: 8.0,
-                          margin: EdgeInsetsDirectional.fromSTEB(
+                          margin: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 4.0, 16.0, 4.0),
                           hidesUnderline: true,
                           isOverButton: true,
@@ -516,7 +514,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 15.0, 16.0, 0.0),
                     child: FFButtonWidget(
                       onPressed: () {
                         print('Button pressed ...');
@@ -528,9 +526,9 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                         width: double.infinity,
                         height: 55.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
@@ -545,7 +543,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 30.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 200.0,
@@ -554,7 +552,7 @@ class _CostpredictionpageWidgetState extends State<CostpredictionpageWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 15.0, 16.0, 0.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,

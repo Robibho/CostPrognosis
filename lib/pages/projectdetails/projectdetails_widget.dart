@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'projectdetails_model.dart';
 export 'projectdetails_model.dart';
 
@@ -86,7 +83,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                 borderRadius: 30.0,
                 borderWidth: 1.0,
                 buttonSize: 60.0,
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_rounded,
                   color: Colors.white,
                   size: 30.0,
@@ -106,7 +103,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                       letterSpacing: 0.0,
                     ),
               ),
-              actions: [],
+              actions: const [],
               flexibleSpace: FlexibleSpaceBar(
                 background: ClipRRect(
                   borderRadius: BorderRadius.circular(8.0),
@@ -126,7 +123,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(6.0),
+                    padding: const EdgeInsets.all(6.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -137,7 +134,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                             '',
                           ).image,
                         ),
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 3.0,
                             color: Color(0x33000000),
@@ -150,7 +147,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         ],
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 8.0, 16.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -167,7 +164,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     2.0, 2.0, 2.0, 2.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(24.0),
@@ -181,7 +178,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 0.0, 0.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
@@ -200,11 +197,11 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 4.0, 0.0, 0.0),
                                     child: Text(
                                       valueOrDefault<String>(
-                                        projectdetailsCostprojectRecord?.email,
+                                        projectdetailsCostprojectRecord.email,
                                         'company email unavailable!',
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -225,13 +222,13 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -244,10 +241,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -257,7 +254,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -272,11 +269,11 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 valueOrDefault<String>(
-                                  projectdetailsCostprojectRecord?.displayName,
+                                  projectdetailsCostprojectRecord.displayName,
                                   'needs update',
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -294,13 +291,13 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -313,10 +310,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -326,7 +323,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -342,23 +339,23 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                             ),
                             Expanded(
                               child: Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Align(
-                                  alignment: AlignmentDirectional(-1.0, 0.0),
+                                  alignment: const AlignmentDirectional(-1.0, 0.0),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: Column(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             valueOrDefault<String>(
                                               projectdetailsCostprojectRecord
-                                                  ?.description,
+                                                  .description,
                                               'Please Update ',
                                             ),
                                             style: FlutterFlowTheme.of(context)
@@ -382,13 +379,13 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -401,10 +398,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -414,7 +411,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -447,10 +444,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                         ),
                                   ),
                                   TextSpan(
-                                    text: projectdetailsCostprojectRecord!
+                                    text: projectdetailsCostprojectRecord
                                         .amount
                                         .toString(),
-                                    style: TextStyle(),
+                                    style: const TextStyle(),
                                   )
                                 ],
                                 style: FlutterFlowTheme.of(context)
@@ -468,13 +465,13 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                   ),
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -487,10 +484,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: const AlignmentDirectional(0.0, 0.0),
                       child: Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -500,7 +497,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                               size: 24.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 FFLocalizations.of(context).getText(
@@ -521,7 +518,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                   TextSpan(
                                     text: valueOrDefault<String>(
                                       projectdetailsCostprojectRecord
-                                          ?.phoneNumber,
+                                          .phoneNumber,
                                       'number of',
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -538,7 +535,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                     text: FFLocalizations.of(context).getText(
                                       'p5uacb8n' /*  years */,
                                     ),
-                                    style: TextStyle(),
+                                    style: const TextStyle(),
                                   )
                                 ],
                                 style: FlutterFlowTheme.of(context)
@@ -555,10 +552,10 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                     ),
                   ),
                   Align(
-                    alignment: AlignmentDirectional(1.0, 0.0),
+                    alignment: const AlignmentDirectional(1.0, 0.0),
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 40.0, 0.0, 0.0),
                       child: FFButtonWidget(
                         onPressed: () async {
                           context.pushNamed('profile');
@@ -566,15 +563,15 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                         text: FFLocalizations.of(context).getText(
                           'h5w01o1n' /* Update */,
                         ),
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.create,
                           size: 15.0,
                         ),
                         options: FFButtonOptions(
                           height: 40.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 24.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).primary,
                           textStyle:
@@ -584,7 +581,7 @@ class _ProjectdetailsWidgetState extends State<ProjectdetailsWidget> {
                                     letterSpacing: 0.0,
                                   ),
                           elevation: 3.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),

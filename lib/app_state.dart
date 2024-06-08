@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
-import 'backend/api_requests/api_manager.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:csv/csv.dart';
 import 'package:synchronized/synchronized.dart';
@@ -21,7 +20,7 @@ class FFAppState extends ChangeNotifier {
   }
 
   Future initializePersistedState() async {
-    secureStorage = FlutterSecureStorage();
+    secureStorage = const FlutterSecureStorage();
     await _safeInitAsync(() async {
       _transaction = (await secureStorage.getStringList('ff_transaction'))
               ?.map((x) {
@@ -64,45 +63,45 @@ class FFAppState extends ChangeNotifier {
 
   List<TransactionStruct> _transaction = [];
   List<TransactionStruct> get transaction => _transaction;
-  set transaction(List<TransactionStruct> _value) {
-    _transaction = _value;
+  set transaction(List<TransactionStruct> value) {
+    _transaction = value;
     secureStorage.setStringList(
-        'ff_transaction', _value.map((x) => x.serialize()).toList());
+        'ff_transaction', value.map((x) => x.serialize()).toList());
   }
 
   void deleteTransaction() {
     secureStorage.delete(key: 'ff_transaction');
   }
 
-  void addToTransaction(TransactionStruct _value) {
-    _transaction.add(_value);
+  void addToTransaction(TransactionStruct value) {
+    _transaction.add(value);
     secureStorage.setStringList(
         'ff_transaction', _transaction.map((x) => x.serialize()).toList());
   }
 
-  void removeFromTransaction(TransactionStruct _value) {
-    _transaction.remove(_value);
+  void removeFromTransaction(TransactionStruct value) {
+    _transaction.remove(value);
     secureStorage.setStringList(
         'ff_transaction', _transaction.map((x) => x.serialize()).toList());
   }
 
-  void removeAtIndexFromTransaction(int _index) {
-    _transaction.removeAt(_index);
+  void removeAtIndexFromTransaction(int index) {
+    _transaction.removeAt(index);
     secureStorage.setStringList(
         'ff_transaction', _transaction.map((x) => x.serialize()).toList());
   }
 
   void updateTransactionAtIndex(
-    int _index,
+    int index,
     TransactionStruct Function(TransactionStruct) updateFn,
   ) {
-    _transaction[_index] = updateFn(_transaction[_index]);
+    _transaction[index] = updateFn(_transaction[index]);
     secureStorage.setStringList(
         'ff_transaction', _transaction.map((x) => x.serialize()).toList());
   }
 
-  void insertAtIndexInTransaction(int _index, TransactionStruct _value) {
-    _transaction.insert(_index, _value);
+  void insertAtIndexInTransaction(int index, TransactionStruct value) {
+    _transaction.insert(index, value);
     secureStorage.setStringList(
         'ff_transaction', _transaction.map((x) => x.serialize()).toList());
   }
@@ -126,66 +125,66 @@ class FFAppState extends ChangeNotifier {
         '{\"id\":\"8\",\"name\":\"infrastructure\",\"image\":\"https://cdn-icons-png.flaticon.com/128/15564/15564326.png\"}'))
   ];
   List<CategoriesStruct> get categories => _categories;
-  set categories(List<CategoriesStruct> _value) {
-    _categories = _value;
+  set categories(List<CategoriesStruct> value) {
+    _categories = value;
     secureStorage.setStringList(
-        'ff_categories', _value.map((x) => x.serialize()).toList());
+        'ff_categories', value.map((x) => x.serialize()).toList());
   }
 
   void deleteCategories() {
     secureStorage.delete(key: 'ff_categories');
   }
 
-  void addToCategories(CategoriesStruct _value) {
-    _categories.add(_value);
+  void addToCategories(CategoriesStruct value) {
+    _categories.add(value);
     secureStorage.setStringList(
         'ff_categories', _categories.map((x) => x.serialize()).toList());
   }
 
-  void removeFromCategories(CategoriesStruct _value) {
-    _categories.remove(_value);
+  void removeFromCategories(CategoriesStruct value) {
+    _categories.remove(value);
     secureStorage.setStringList(
         'ff_categories', _categories.map((x) => x.serialize()).toList());
   }
 
-  void removeAtIndexFromCategories(int _index) {
-    _categories.removeAt(_index);
+  void removeAtIndexFromCategories(int index) {
+    _categories.removeAt(index);
     secureStorage.setStringList(
         'ff_categories', _categories.map((x) => x.serialize()).toList());
   }
 
   void updateCategoriesAtIndex(
-    int _index,
+    int index,
     CategoriesStruct Function(CategoriesStruct) updateFn,
   ) {
-    _categories[_index] = updateFn(_categories[_index]);
+    _categories[index] = updateFn(_categories[index]);
     secureStorage.setStringList(
         'ff_categories', _categories.map((x) => x.serialize()).toList());
   }
 
-  void insertAtIndexInCategories(int _index, CategoriesStruct _value) {
-    _categories.insert(_index, _value);
+  void insertAtIndexInCategories(int index, CategoriesStruct value) {
+    _categories.insert(index, value);
     secureStorage.setStringList(
         'ff_categories', _categories.map((x) => x.serialize()).toList());
   }
 
   int _selectedCategory = 0;
   int get selectedCategory => _selectedCategory;
-  set selectedCategory(int _value) {
-    _selectedCategory = _value;
+  set selectedCategory(int value) {
+    _selectedCategory = value;
   }
 
   String _speechToTextResponse = '';
   String get speechToTextResponse => _speechToTextResponse;
-  set speechToTextResponse(String _value) {
-    _speechToTextResponse = _value;
+  set speechToTextResponse(String value) {
+    _speechToTextResponse = value;
   }
 
   String _apiKey = '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';
   String get apiKey => _apiKey;
-  set apiKey(String _value) {
-    _apiKey = _value;
-    secureStorage.setString('ff_apiKey', _value);
+  set apiKey(String value) {
+    _apiKey = value;
+    secureStorage.setString('ff_apiKey', value);
   }
 
   void deleteApiKey() {
@@ -194,37 +193,37 @@ class FFAppState extends ChangeNotifier {
 
   List<TasksStruct> _tasks = [];
   List<TasksStruct> get tasks => _tasks;
-  set tasks(List<TasksStruct> _value) {
-    _tasks = _value;
+  set tasks(List<TasksStruct> value) {
+    _tasks = value;
   }
 
-  void addToTasks(TasksStruct _value) {
-    _tasks.add(_value);
+  void addToTasks(TasksStruct value) {
+    _tasks.add(value);
   }
 
-  void removeFromTasks(TasksStruct _value) {
-    _tasks.remove(_value);
+  void removeFromTasks(TasksStruct value) {
+    _tasks.remove(value);
   }
 
-  void removeAtIndexFromTasks(int _index) {
-    _tasks.removeAt(_index);
+  void removeAtIndexFromTasks(int index) {
+    _tasks.removeAt(index);
   }
 
   void updateTasksAtIndex(
-    int _index,
+    int index,
     TasksStruct Function(TasksStruct) updateFn,
   ) {
-    _tasks[_index] = updateFn(_tasks[_index]);
+    _tasks[index] = updateFn(_tasks[index]);
   }
 
-  void insertAtIndexInTasks(int _index, TasksStruct _value) {
-    _tasks.insert(_index, _value);
+  void insertAtIndexInTasks(int index, TasksStruct value) {
+    _tasks.insert(index, value);
   }
 
   int _timerValue = 0;
   int get timerValue => _timerValue;
-  set timerValue(int _value) {
-    _timerValue = _value;
+  set timerValue(int value) {
+    _timerValue = value;
   }
 }
 
@@ -273,12 +272,12 @@ extension FlutterSecureStorageExtensions on FlutterSecureStorage {
         if (result == null || result.isEmpty) {
           return null;
         }
-        return CsvToListConverter()
+        return const CsvToListConverter()
             .convert(result)
             .first
             .map((e) => e.toString())
             .toList();
       });
   Future<void> setStringList(String key, List<String> value) async =>
-      await writeSync(key: key, value: ListToCsvConverter().convert([value]));
+      await writeSync(key: key, value: const ListToCsvConverter().convert([value]));
 }
