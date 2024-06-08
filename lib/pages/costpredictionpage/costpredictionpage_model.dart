@@ -2,6 +2,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'costpredictionpage_widget.dart' show CostpredictionpageWidget;
 import 'package:flutter/material.dart';
+import 'package:tflite_flutter/tflite_flutter.dart';  // Add this import
 
 class CostpredictionpageModel
     extends FlutterFlowModel<CostpredictionpageWidget> {
@@ -32,6 +33,12 @@ class CostpredictionpageModel
   String? dropDownValue;
   FormFieldController<String>? dropDownValueController;
 
+  // Add TFLite interpreter
+  final Interpreter interpreter;
+
+  // Constructor to initialize the interpreter
+  CostpredictionpageModel(this.interpreter);
+
   @override
   void initState(BuildContext context) {}
 
@@ -53,4 +60,12 @@ class CostpredictionpageModel
     textFieldFocusNode5?.dispose();
     textController5?.dispose();
   }
+
+  // Method to perform prediction
+  Future<List<dynamic>> predict(List<dynamic> input) async {
+    var output = List.filled(1 * 1, 0).reshape([1, 1]);
+    interpreter.run(input, output);
+    return output;
+  }
 }
+
